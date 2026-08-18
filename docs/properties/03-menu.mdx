@@ -1,0 +1,154 @@
+---
+title: "Menu"
+description: "Choose what this property serves, when it serves it, and what it charges."
+order: 3
+---
+
+Choose what this property serves, when it serves it, and what it charges.
+
+Open a property and go to its **Menu** tab.
+
+Guests only see this once **F&B Menu** is switched on in
+[Property settings](/properties/property-settings).
+
+## Add a menu
+
+An empty Menu tab offers three routes. Which you pick decides who controls this
+menu's **structure** — the categories, and which dishes sit in them.
+
+| Route | What you get | Pick it when |
+| --- | --- | --- |
+| **Link existing menu** | The property serves a master menu directly. Add a category to the master and it appears here. This property still sets its own prices, stock, and which items to hide. | Every property serves the same food. |
+| **Start from a template** | Your own copy of a master menu's structure, which you can then change here without affecting anyone else. | This property serves a different selection. |
+| **Start from scratch** | An empty structure you build here. | This property's lineup has nothing in common with the others. |
+
+Once you have one menu, select **Add menu** to add more.
+
+<Callout title="Good to know">
+
+Whichever route you pick, the dishes themselves still come
+from your master catalog. A name, description, photo, or allergen list is
+written once and is the same everywhere — only the price, stock, and
+visibility are yours to set here. Linking is the safe choice if you are
+unsure: you keep the shared structure, and you can still close the kitchen,
+change a price, or mark something sold out without touching any other
+property.
+
+</Callout>
+
+→ [Master menus](/master-setup/menus)
+
+## The menu bar
+
+The dropdown at the top switches between this property's menus. Inactive ones
+are marked.
+
+| Element | Does |
+| --- | --- |
+| **Menu active** switch | Shows or hides this menu from guests, at once. |
+| **Linked** badge | This menu follows a master menu. |
+| Hours and days badges | For example `7:00 AM - 11:00 AM` and `Daily`. |
+| Pencil icon | **Edit details** on your own menu, **Property schedule** on a linked one. |
+| Bin icon | **Delete menu** on your own, **Unlink menu** on a linked one. |
+
+Unlinking removes the menu from this property. The master menu is untouched.
+
+## Serving hours
+
+Set a **Start Time** and **End Time**, or leave both blank for an all-day menu.
+Choose the days it runs.
+
+Hours are read in the property's own time zone. Overnight windows work — 10:00
+PM to 2:00 AM carries into the next morning.
+
+<Callout title="Good to know">
+
+On a **linked** menu, hours you set here are replaced if
+someone edits the master template's schedule. If this property needs hours
+that stay put, start from a template instead of linking.
+
+</Callout>
+
+### What guests see
+
+| Status | Meaning | Can they order? |
+| --- | --- | --- |
+| **Open now** | Inside today's window. | Yes, for now. |
+| **Preorder** | Closed, but opening again soon. Shows when. | Yes, scheduled for the next opening. |
+| **Closed** | Nothing opening in the next two weeks. | No. |
+
+A menu switched off never appears, whatever its hours.
+
+## Categories
+
+Categories group items into something a guest can scan quickly — Starters,
+Mains, Drinks.
+
+- **Add Category** — a name and an optional description.
+- **⋯** → edit or delete.
+- Drag a category to move it. The order saves itself, and it is the order
+  guests see.
+
+Deleting a category does not delete the items from your master catalog.
+
+Linked menus take their categories from the master menu, so you cannot add or
+remove them here.
+
+## Items
+
+On your own menus, add items from your master catalog with **Link Catalog
+Items**, or build them here.
+
+Drag items within a category to reorder them.
+
+### Set a price, availability, and visibility
+
+Select an item to open **Property item settings**.
+
+| Control | Does |
+| --- | --- |
+| **Property price** | What this property charges. Leave blank to use the catalog price. |
+| **Available** | Whether guests can order it here. |
+| **Visible to guests** | On linked menus only. Hides the item at this property without changing the master menu. |
+
+### Sold out
+
+Turn **Available** off when the kitchen runs out. The item stays on the guest's
+screen marked **Sold Out** and cannot be ordered — no editing, no deleting.
+
+GoBunny then asks when it should come back: in an hour, tonight, tomorrow, a
+time you choose, or only when you say so. A scheduled return shows as a small
+badge on the item, and you can select the badge to change the time.
+
+Use this mid-service. Tonight's fish sells out at 8pm and returns tomorrow on
+its own.
+
+## What changes reach guests
+
+- Changes reach the guest portal immediately.
+- Prices show in the property's currency, set in [Properties](/properties/properties).
+- GoBunny checks prices and availability again when an order is submitted, so a
+  guest cannot order a sold-out item or an out-of-hours menu from a stale page.
+- A guest's basket belongs to one menu and one delivery time. To order from a
+  second menu, they finish or empty the first.
+- Menu and item changes are recorded in
+  [Audit logs](/administration/audit-logs).
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| "Choose an end time or clear the start time." | Set both times, or neither. |
+| "End time must be different from start time." | A zero-length window is not a schedule. |
+| Guests say the menu is closed when it should be open | Check the property's **Local Time Zone** first, then the menu's hours and days. |
+| Guests see no Menu tab at all | **F&B Menu** is switched off in [Property settings](/properties/property-settings). |
+| You cannot add a category | The menu is linked to a master menu. Change it there, or start from a template instead. |
+| An item came back in stock on its own | It had a scheduled return. Turn it off again and choose to bring it back manually. |
+| A master price change did not reach this property | This property has set its own **Property price** for that item. Clear the field to go back to the catalog price. |
+
+## Related
+
+- [Master menus](/master-setup/menus) — the catalog and templates
+- [Property settings](/properties/property-settings) — switch the menu on
+- [Guest portal: Dining](/guest-portal/dining) — what guests see
+- [Guest requests](/dashboard/guest-requests) — where orders arrive

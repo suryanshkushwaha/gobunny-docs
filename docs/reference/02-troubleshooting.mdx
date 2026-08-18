@@ -1,0 +1,237 @@
+---
+title: "Troubleshooting and FAQ"
+description: "Common problems and the fastest way through them."
+order: 2
+---
+
+Common problems and the fastest way through them.
+
+## Signing in
+
+**You cannot sign in.**
+Check the email for typos, then use **Forgot password?**.
+→ [Reset password](/before-you-sign-in/reset-password)
+
+**A colleague invited you, but sign-up says your email is taken.**
+That address already has a GoBunny account. One address belongs to one account.
+Ask for the invite to go to a different one.
+
+**You sign in but your business does not load.**
+Your membership may be inactive or removed. Ask an owner or admin.
+
+**A page is missing from your sidebar.**
+Your role does not include it.
+→ [Roles and permissions](/reference/roles-and-permissions)
+
+## QR codes and the guest portal
+
+**A guest sees "Room Not Found".**
+The code does not match a room. Check, in this order:
+
+1. The room still exists in [Rooms](/properties/rooms)
+2. The property was not deleted
+3. The code was not printed against a web address you have since removed
+4. The print is clean enough to scan
+
+**Will printed codes break if you edit a room?**
+No. Room codes never change. Rename a room, change its Wi-Fi, or restyle your
+QR codes and every printed card keeps working.
+
+**What does break a printed code?**
+Deleting the room, deleting the property, or removing a web address the code
+was printed against.
+
+**A code will not scan from paper.**
+Usually too much styling. Try the **High Contrast Print** preset, set recovery
+to **H**, shrink or remove the centre logo, and print larger. Always test one
+card before a batch.
+→ [QR customization](/platform-setup/qr-customization)
+
+**Printing does nothing.**
+Allow pop-ups for GoBunny, then select **Print Card** again.
+
+**Can a guest see another room?**
+No. Each code opens only its own room.
+
+## Menus
+
+**A menu shows as closed when it should be open.**
+Check, in this order:
+
+1. **F&B Menu** is on in
+   [Property settings](/properties/property-settings)
+2. The menu itself is switched on
+3. The property's **Local Time Zone** is right
+4. The menu's hours and days cover right now
+
+The time zone is the usual culprit.
+
+**A guest cannot order even though the menu is open.**
+The item is probably marked unavailable. Check it on the property's
+[Menu](/properties/menu) tab.
+
+**A guest says they cannot order from two menus.**
+Correct, and deliberate. A basket belongs to one menu and one delivery time.
+They finish or empty the first, then start the second.
+
+**A master price change did not reach a property.**
+That property has set its own **Property price** for the item. Clear that field
+on the property's Menu tab to go back to the catalog price.
+
+**You cannot add a category to a property's menu.**
+The menu is linked to a master menu, so its structure comes from there. Change
+it in [Master menus](/master-setup/menus), or start from a template
+instead of linking.
+
+## Services and guides
+
+**Guests see no services.**
+Either nothing is switched on for that property, or **Guest Services** is off
+in [Property settings](/properties/property-settings).
+
+**A new service you added is not on a property.**
+New services arrive on every property switched off. Turn it on for the ones
+that offer it.
+→ [Property services](/properties/services)
+
+**Something you turned off came back on its own.**
+It had a scheduled return time. Turn it off again and choose to bring it back
+manually.
+
+**The wrong team is getting a request.**
+Its category is wrong. Change it in
+[Master services](/master-setup/services).
+
+**A Google Maps link is rejected.**
+GoBunny accepts Google Maps addresses only. Use **Share** in Google Maps and
+copy that link.
+
+## Guest requests
+
+**Requests are not reaching your queue.**
+Check your role receives that kind of request, and that you can reach that
+property.
+→ [Roles and permissions](/reference/roles-and-permissions)
+
+**No notification sound.**
+Your browser may block audio until you interact with the page. Click anywhere
+in the dashboard once, then wait for the next request.
+
+**You cancelled by mistake.**
+There is an eight-second **Undo** on the card. After that, anyone who can update
+request status can move it back to pending from the **⋯** menu — every role
+except read only.
+
+**Can you delete a request?**
+There is no delete button. Requests are closed by changing their status, so
+your queue history stays whole. Deleting the room or the property they belong
+to does remove them.
+
+**A guest says they cancelled but you made it anyway.**
+Check [Audit logs](/administration/audit-logs), filtered to Guest
+Requests and Status Changes. The source tells you whether it came from the
+guest, the dashboard, or Telegram, and when.
+
+**Why can a guest not cancel?**
+Cancellation is off for that kind of request, the window has closed, or your
+team already started the work. Only pending requests can be cancelled by a
+guest.
+
+**A guest cannot see a request they made.**
+Their status list lives on their own phone. Ask which phone they used. You can
+always find the request in your queue.
+
+## Telegram
+
+**Connect Telegram is greyed out.**
+Telegram is not switched on for your business. Ask an owner to arrange it with
+GoBunny.
+
+**You connected but get nothing.**
+Check the card says **Connected**, that your role receives that kind of
+request, and that you can reach that property. Read-only users never get
+Telegram notifications.
+
+**No buttons on your messages.**
+Your setting is **Updates only**. Switch to **Updates and action buttons**.
+→ [Integrations](/platform-setup/integrations)
+
+## Your web address
+
+**It has said "Waiting" for hours.**
+DNS changes take their own time. Confirm the records were added at the provider
+your nameservers actually point at, then select **Check** again.
+
+**A record says "Replace".**
+Your provider has a conflicting record. Delete the old one and add the
+replacement GoBunny shows.
+→ [Domain](/platform-setup/domain)
+
+**Can you use your main domain?**
+No. Use a subdomain such as `stay.yourhotel.com`. Your main domain almost
+certainly hosts your website.
+
+**Can the dashboard run on your address?**
+No. Your address serves guest room portals only. Sign-in and the dashboard stay
+on the main GoBunny address.
+
+## Branding
+
+**Your changes are not showing for guests.**
+Did you select **Save**? An amber **Unsaved changes** marker means you did not.
+
+**One property looks different from the rest.**
+It has a branding override on. Open its **Branding** tab and either adjust it
+or turn the override off.
+→ [Property branding](/properties/property-branding)
+
+**The cover image is not appearing.**
+The address must point straight at an image file. If it fails to load, GoBunny
+falls back to your background colour rather than showing a broken image.
+
+**You changed your logo but the QR codes show the old one.**
+They should not — QR codes read your current logo. Refresh the page. Cards you
+already printed keep the old logo, of course.
+
+## Team
+
+**You cannot invite the role you want.**
+You can only invite roles below your own. Ask an owner or admin.
+
+**You cannot remove someone.**
+You cannot remove yourself, or anyone at or above your own level.
+
+**What happens to work assigned to someone you remove?**
+Their requests are unassigned and stay in the queue. Nothing is lost, and their
+history stays.
+
+## Data and history
+
+**Is anything deleted for good?**
+Yes, and more than you might expect. Deleting a property removes its rooms,
+menus, and selections — **and its whole guest request history and audit trail**.
+Deleting a room breaks its printed QR code and removes that room's past
+requests. Neither can be undone.
+
+Export or record anything you need for accounts before you delete a property.
+
+**What is kept?**
+Guest request history and audit logs survive even when the menu item, service,
+or teammate is gone.
+
+**Are Wi-Fi passwords in the logs?**
+No. They are hidden before anything is written.
+
+## Still stuck?
+
+Note what you were doing, which property and room were involved, and the exact
+message you saw.
+
+If it concerns a specific request, the entry in
+[Audit logs](/administration/audit-logs) usually has the answer.
+
+## Related
+
+- [Getting started](/getting-started)
+- [Roles and permissions](/reference/roles-and-permissions)
+- [Audit logs](/administration/audit-logs)

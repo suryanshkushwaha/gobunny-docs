@@ -1,0 +1,199 @@
+---
+title: "Roles and permissions"
+description: "Who can see what, and who can do what."
+order: 1
+---
+
+Who can see what, and who can do what.
+
+Use this when you are deciding which role to give someone. Roles are assigned
+in [Team](/administration/team).
+
+## Two things control access
+
+| Setting | Decides |
+| --- | --- |
+| **Role** | Which pages and actions someone gets. |
+| **Property access** | Which properties they can work in. Leave it open for all, or pick specific ones. |
+
+Both apply together. A property manager limited to one hotel gets full property
+manager powers, but only at that hotel.
+
+Anything a role does not include simply does not appear in their sidebar.
+
+## The ladder
+
+You can only invite people **below** your own level.
+
+```
+Owner
+  └─ Admin
+       └─ Property manager
+            └─ Services manager
+                 └─ Front desk · F&B manager · Housekeeping · Maintenance
+                      └─ Read only
+```
+
+**Custom** roles sit outside the ladder. Anyone who can invite can build one, at
+any level. What you are allowed to put inside it depends on your own role — see
+[Custom roles](#custom-roles).
+
+## The roles
+
+| Role | For |
+| --- | --- |
+| **Owner** | Whoever created the account. Full control, including ownership. Cannot be assigned. |
+| **Admin** | A trusted second-in-command. Everything except ownership transfer. Always account-wide. |
+| **Property manager** | Runs one or more properties end to end, including the master catalog. |
+| **Services manager** | Guest services end to end — the master catalog, what each property offers, and the requests that come in. |
+| **Front desk** | Reception. Sees rooms and handles front-desk requests. |
+| **F&B manager** | The kitchen and food orders. |
+| **Housekeeping** | Housekeeping and laundry requests. |
+| **Maintenance** | Maintenance requests. |
+| **Read only** | Can look, cannot touch. Good for auditors and trainees. |
+| **Custom** | An exact set of permissions, under a name you choose. |
+
+## What each role can reach
+
+| | Owner | Admin | Property mgr | Services mgr | Front desk | F&B mgr | Housekeeping | Maintenance | Read only |
+| --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| **Dashboard** | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — |
+| **Guest Requests** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Properties** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| — add, edit, delete | ✅ | ✅ | ✅ | — | — | — | — | — | — |
+| **Rooms** | ✅ | ✅ | ✅ | — | ✅ | — | — | — | ✅ |
+| — add, edit, delete | ✅ | ✅ | — | — | — | — | — | — | — |
+| **Master Setup → Services** | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — |
+| **Master Setup → Menus** | ✅ | ✅ | ✅ | — | — | — | — | — | — |
+| **Master Setup → Local Guides** | ✅ | ✅ | ✅ | — | — | — | — | — | — |
+| **Property Menu** | ✅ | ✅ | ✅ | — | — | ✅ | — | — | ✅ |
+| — edit | ✅ | ✅ | ✅ | — | — | ✅ | — | — | — |
+| **Property Services** | ✅ | ✅ | ✅ | ✅ | — | — | ✅ | ✅ | ✅ |
+| — edit | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — |
+| **Property Local Guide** | ✅ | ✅ | ✅ | — | — | — | — | — | ✅ |
+| — edit | ✅ | ✅ | ✅ | — | — | — | — | — | — |
+| **Branding** | ✅ | ✅ | — | — | — | — | — | — | — |
+| **QR Customization** | ✅ | ✅ | — | — | — | — | — | — | — |
+| **Domain** | ✅ | ✅ | — | — | — | — | — | — | — |
+| **Integrations** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | — |
+| **Team** | ✅ | ✅ | invite only | — | — | — | — | — | — |
+| **Audit Logs** | ✅ | ✅ | ✅ | ✅ | — | — | — | — | — |
+| **Settings** — your profile | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| **Settings** — business | ✅ | ✅ | — | — | — | — | — | — | — |
+
+<Callout title="Good to know">
+
+Property managers can add and delete properties but not
+rooms. Adding a room creates a QR code that gets printed and stuck to
+furniture, so that stays with owners and admins.
+
+</Callout>
+
+## Which requests each role sees
+
+Requests are routed by type and category, so each team only gets its own work.
+
+| Role | Sees |
+| --- | --- |
+| Owner, Admin, Property manager | Everything |
+| Services manager | All service requests. Not food orders. |
+| F&B manager | Food and drink orders. Not service requests. |
+| Housekeeping | Housekeeping and Laundry |
+| Maintenance | Maintenance |
+| Front desk | Front Desk, Other, and anything uncategorised |
+| Read only | Everything, with no buttons |
+
+The same routing applies in the dashboard **and** in Telegram, with one
+exception: read-only users get no Telegram notifications at all.
+
+Property access narrows it further in both places.
+
+## What each role can do to a request
+
+| Role | Can |
+| --- | --- |
+| Owner, Admin | Update status, assign to teammates, complete, cancel. |
+| Property manager | The same, at their properties. |
+| Services manager | The same, for service requests at their properties. |
+| Front desk | Update status and claim service requests they can see. Cannot assign or cancel. |
+| F&B manager | Update status on orders they can see. |
+| Housekeeping | Update status and claim service requests they can see. Cannot assign or cancel. |
+| Maintenance | Update status and claim service requests they can see. Cannot assign or cancel. |
+| Read only | Look only. |
+
+### Assign versus claim
+
+Two different models, kept apart on purpose.
+
+- **Assign** — a manager routes work to a named teammate. Assigning does not
+  change the status.
+- **Claim** — a staff member takes unassigned work for themselves, which also
+  moves it to In Progress. If two people claim at the same moment, exactly one
+  wins.
+
+Managers assign. Front-line staff claim.
+
+## Property access
+
+Most roles can be limited to specific properties. That limit applies
+everywhere:
+
+- The properties list and the property switcher
+- The request queue and its counts
+- Telegram notifications
+- Audit logs
+- Every action they attempt
+
+**Admin** is always account-wide and has no property access setting.
+
+## Custom roles
+
+When no preset fits, choose **Custom**:
+
+1. Name the role — "Night supervisor", say.
+2. Tick the exact permissions from the grouped list: Account, Dashboard, Team,
+   Properties, Rooms, Branding and domains, Menu, Services, Local guide, Guest
+   requests, and Integrations.
+
+You can grant the permissions your own role holds. **Claim open service
+requests** is the one addition — owners, admins, and property managers can
+grant it even though their own roles do not use it, so they can build
+front-line roles.
+
+Team permissions are limited by who you are:
+
+| Your role | Team permissions you can grant |
+| --- | --- |
+| Owner | **Invite lower roles** and **Manage team access** |
+| Admin | **Invite lower roles** only |
+| Anyone else | Neither |
+
+Request routing follows the permissions you tick. A custom role with menu
+permissions receives food orders; one with full service management receives all
+service requests.
+
+The name you chose appears wherever that teammate's role is shown.
+
+## Common setups
+
+| Situation | Roles |
+| --- | --- |
+| Small hotel, owner plus two staff | Owner + two **Front desk** |
+| Hotel with a restaurant | Owner + **F&B manager** + **Front desk** + **Housekeeping** |
+| Group of properties, one manager each | Owner + a **Property manager** per property, each limited to theirs |
+| Bringing in an accountant or consultant | **Read only** |
+| A night manager who handles everything but must not change your setup | **Custom**, with request and view permissions only |
+
+## How access is applied
+
+- A role controls what someone can do, not only what they can see. Reaching a
+  page by its address does not grant the actions on it.
+- Access changes take effect on that person's next page load.
+- Deactivating someone's membership means they can still sign in, but your
+  business will not load for them.
+
+## Related
+
+- [Team](/administration/team) — assign and change roles
+- [Guest requests](/dashboard/guest-requests)
+- [Integrations](/platform-setup/integrations) — Telegram routing

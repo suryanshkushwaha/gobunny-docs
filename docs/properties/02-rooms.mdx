@@ -1,0 +1,143 @@
+---
+title: "Rooms"
+description: "Rooms are what guests scan. Each room gets a unique code and its own QR code, which opens that room's portal."
+order: 2
+---
+
+Rooms are what guests scan. Each room gets a unique code and its own QR code,
+which opens that room's portal.
+
+Open a property and go to its **Rooms** tab.
+
+## The list
+
+A table on a computer, cards on a phone.
+
+| Column | Meaning |
+| --- | --- |
+| **Room** | The number or name you entered. |
+| **Room Code** | The unique code GoBunny made, like `RM-XXXX-XXXX`. The QR code points at it. |
+| **QR Code** | **View** and **Download PNG**. |
+| **Wi-Fi Settings** | The network this room hands out, tagged **Override** or **Default**. |
+| **Actions** | **⋯**: View QR Code, Download PNG, Edit room, Delete. |
+
+## Add a room
+
+1. Select **Add Room**.
+2. Fill in the fields below.
+3. Select **Create Room**.
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| **Room Number / Name** | Yes | Up to 50 characters. Anything works — `101`, `Deluxe Suite`, `Cottage 3`. |
+| **Wi-Fi SSID (Override)** | No | Leave empty to use the property network. The placeholder shows what it will use. |
+| **Wi-Fi Password (Override)** | No | Leave empty to use the property password. |
+| **Checkout Time (Override)** | No | Leave as **No override** to use the property checkout time. |
+
+The room code is generated for you and cannot be changed.
+
+The row appears at once with a "Finishing up..." note. QR actions arrive a
+moment later, once the code exists.
+
+<Callout title="Good to know">
+
+Add every room that needs its own QR code before you print
+anything. A room added later needs its own card printed separately.
+
+</Callout>
+
+## Edit a room
+
+Select **⋯** → **Edit room**, change what you need, and save.
+
+The room code never changes, so printed QR codes keep working. Change the Wi-Fi
+password and every new scan picks it up — but printed tent cards still show the
+old one, so reprint them.
+
+## Delete a room
+
+Select **⋯** → **Delete** and confirm.
+
+The code stops working immediately. Anyone scanning that printed QR code sees
+**Room Not Found**.
+
+Deleting a room also removes its past guest requests and orders. To take a room
+out of service without losing that history, leave it in place and remove the
+card from the room instead.
+
+## QR codes
+
+### View
+
+Select **View**, or **⋯** → **View QR Code**. You get the printable card: your
+property name, the room name, the QR code, and that room's Wi-Fi name and
+password.
+
+### Download
+
+Select **Download**, or **⋯** → **Download PNG**, to save the image. Use it in
+your own signage or print templates.
+
+### Print a tent card
+
+From the QR dialog, select **Print Card**. GoBunny opens a print layout and
+sends it to your printer.
+
+The card carries your property name, the room name, the code, instructions, and
+the Wi-Fi details.
+
+Allow pop-ups for GoBunny, or printing is blocked.
+
+### Where the code points
+
+By default, at your GoBunny address plus the room code. If you connect your own
+web address, at that instead — for example
+`https://stay.yourhotel.com/r/RM-1234-ABCD`.
+
+<Callout title="Good to know">
+
+Connect your web address **before** you print. Codes
+printed against the old address keep pointing at it, and removing a connected
+address later breaks codes printed with it.
+
+</Callout>
+
+→ [Domain](/platform-setup/domain)
+
+### How they look
+
+Dot shapes, colours, corner styles, and the centre logo come from your QR
+settings. Change them for the whole business, or just for this property.
+
+→ [QR customization](/platform-setup/qr-customization) ·
+[Property QR customization](/properties/property-qr-customization)
+
+## How Wi-Fi is decided
+
+GoBunny uses the room's override if it has one, and the property default
+otherwise. The same answer appears in the guest portal, the QR dialog, and the
+printed card.
+
+Use an override when a room or wing runs on a different network — a villa with
+its own router, say.
+
+Wi-Fi passwords are masked in the dashboard but shown to the guest. That is the
+point of the portal.
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| "Please allow popups to print the QR code." | Allow pop-ups for GoBunny, then select **Print Card** again. |
+| "QR code is still loading. Please try again." | Wait a second for it to draw, then print. |
+| A guest reports **Room Not Found** | The room was deleted, or the printed code points at a web address you no longer use. |
+| A room shows "Not available yet" under QR Code | It is still being created. Wait a moment. |
+| A guest has the wrong Wi-Fi password | Check the room's override, then the property default. Reprint the tent card. |
+
+## Related
+
+- [Property settings](/properties/property-settings) — default Wi-Fi and checkout
+  time
+- [QR customization](/platform-setup/qr-customization)
+- [Domain](/platform-setup/domain)
+- [Guest portal overview](/guest-portal/overview)

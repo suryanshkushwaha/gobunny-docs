@@ -1,0 +1,75 @@
+---
+title: "Audit logs"
+description: "What changed in your account, who changed it, and when."
+order: 2
+---
+
+What changed in your account, who changed it, and when.
+
+Go to **Administration → Audit Logs**.
+
+Use it to settle a dispute, check a shift did what it says it did, or answer a
+compliance question.
+
+## What is recorded
+
+| Category | Examples |
+| --- | --- |
+| **Properties** | Created, updated, deleted. |
+| **Rooms** | Created, updated, deleted. |
+| **Menus & Items** | Menus, categories, and items created, updated, or deleted. |
+| **Services** | Created, updated, enabled, disabled, deleted. |
+| **Teammates & Roles** | Invites created and revoked, members added, access changed, members removed. |
+| **Guest Requests** | Claimed, unclaimed, assigned, started, completed, cancelled — including cancellations by the guest. |
+
+## Read an entry
+
+| Element | Meaning |
+| --- | --- |
+| Icon | Which part of GoBunny it belongs to. |
+| Description | What happened. |
+| Action badge | **Created**, **Updated**, **Status**, **Assigned**, or **Deleted**. |
+| Source badge | **Dashboard**, **Telegram**, or **Guest portal**. |
+| Who and when | The person responsible, and the time. |
+
+Select a row for the full detail, including what the value was before and
+after.
+
+## Filters
+
+| Filter | Options |
+| --- | --- |
+| **Search** | Free text across the entries. |
+| **Property** | All Properties, **Account Wide** (things not tied to a property, such as team changes), or one property. |
+| **Category** | All Categories, Guest Requests, Properties, Rooms, Menus & Items, Services, or Teammates & Roles. |
+| **Action** | All Actions, Created, Updated, Status Changes, Assignments, or Deletions. |
+| **Source** | All Sources, Dashboard, Telegram, or Guest portal. |
+
+Entries load 50 at a time. Use the controls at the bottom to page through.
+
+## Common questions
+
+| Question | Where to look |
+| --- | --- |
+| Who cancelled that dinner order? | Category → Guest Requests, Action → Status Changes. The source tells you whether it was staff or the guest. |
+| Did the night shift finish their work? | Category → Guest Requests, Action → Status Changes, then read the times. |
+| Who changed the Wi-Fi password? | Category → Rooms or Properties, Action → Updated. |
+| When did that teammate get access? | Category → Teammates & Roles. |
+| Who took that request off the queue? | Category → Guest Requests, Action → Assignments. |
+
+## Good to know
+
+- Wi-Fi passwords are hidden before anything is written here. They never appear
+  in the log.
+- Logs respect property access. If you are limited to certain properties, you
+  see their entries plus account-wide ones.
+- Logs cannot be edited or deleted from the dashboard, and entries keep the
+  name of whoever acted even after that person leaves the team.
+- Deleting a **property** removes its log entries along with it. Everything you
+  need from a property's history should be recorded before you delete it.
+
+## Related
+
+- [Guest requests](/dashboard/guest-requests)
+- [Team](/administration/team)
+- [Roles and permissions](/reference/roles-and-permissions)

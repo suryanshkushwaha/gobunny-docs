@@ -1,0 +1,113 @@
+---
+title: "Guest portal: Status"
+description: "Where guests track what they have asked for."
+order: 6
+---
+
+Where guests track what they have asked for.
+
+This is the tab that stops them ringing reception to ask whether the order is
+coming.
+
+## The list
+
+A header reads **Request Status** — "Track the live status of your orders and
+service requests for Room \{number\}."
+
+Each request below is a card.
+
+| Element | Notes |
+| --- | --- |
+| Icon | A fork for a food order, a bell for a service request. |
+| Type | **DINING ORDER** or **SERVICE REQUEST**. |
+| Time | When they sent it. |
+| Status | See below. |
+
+| Status | Meaning |
+| --- | --- |
+| **Pending** | Received, not started. |
+| **In Progress** | Your team is on it. |
+| **Completed** | Done. |
+| **Cancelled** | Cancelled, by the guest or by your team. |
+
+A food order shows each item with its quantity and line total, whether it is
+immediate or scheduled, and the total. A service request shows the service
+name, its category, and the price if there is one.
+
+Both show the guest's own note, if they left one.
+
+## Live updates
+
+The status updates about every 20 seconds while the guest has the page open. If
+they lock their phone or switch apps it pauses, and picks up again when they
+come back.
+
+When something changes, they get a sound and a message:
+
+| Change | Message |
+| --- | --- |
+| → In Progress | "Your \{order/request\} for \{summary\} is now in progress." |
+| → Completed | "Your \{order/request\} for \{summary\} is complete!" |
+| → Cancelled | "Your \{order/request\} for \{summary\} has been cancelled. Please contact the front desk." |
+
+<Callout title="Good to know">
+
+Marking a request **In Progress** is worth the click. The
+guest gets told someone picked it up, which is usually what they wanted to
+know.
+
+</Callout>
+
+## Cancelling
+
+A guest can cancel only when all three are true:
+
+1. You allow cancellation for that kind of request in
+   [Property settings](/properties/property-settings)
+2. The request is still **Pending**
+3. The window is still open
+
+They see the exact deadline. While the window is open, it reads
+**"Cancellation allowed until 07:30 PM"** with an active **Cancel Request**
+button. Once it passes, it reads **"Cancellation window was closed at 07:30
+PM"** and the button greys out.
+
+Selecting it asks "Cancel this request? This action cannot be undone."
+
+| Request | Deadline |
+| --- | --- |
+| Immediate | When they sent it, plus your "cancel within" minutes |
+| Scheduled | The delivery time they chose, minus your "cancel before" minutes |
+
+Both use the property's time zone.
+
+Guest cancellations show in your queue and in
+[Audit logs](/administration/audit-logs) marked **Guest portal**, so
+you can tell them from your team's.
+
+## Before they ask for anything
+
+> **No requests yet** — "Your orders and service requests will appear here in
+> real-time."
+
+## Why a guest might see an empty list
+
+The list lives on the guest's own phone, because they never sign in. So:
+
+- Clearing browser data empties it. The requests are untouched in your
+  dashboard.
+- Scanning from a different phone gives an empty list.
+- Private or incognito mode loses the list when the tab closes.
+- One room's portal can never show another room's requests.
+
+If a guest loses their list, your team can still see everything in
+[Guest requests](/dashboard/guest-requests) and tell them where it
+stands.
+
+## Related
+
+- [Property settings](/properties/property-settings) — cancellation
+  windows
+- [Guest requests](/dashboard/guest-requests) — your side of the same
+  thing
+- [Guest portal overview](/guest-portal/overview)

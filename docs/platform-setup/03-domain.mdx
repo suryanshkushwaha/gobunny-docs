@@ -1,0 +1,121 @@
+---
+title: "Domain"
+description: "Point your room QR codes at your own web address, such as stay.yourhotel.com, instead of the standard GoBunny one."
+order: 3
+---
+
+Point your room QR codes at your own web address, such as
+`stay.yourhotel.com`, instead of the standard GoBunny one.
+
+Go to **Platform Setup → Domain**.
+
+## Before you start
+
+- You need access to your domain's DNS settings, usually at your domain
+  registrar.
+- Use a **subdomain** such as `stay.yourhotel.com` or `rooms.yourhotel.com`.
+  Main domains like `yourhotel.com` are not supported, because your website
+  almost certainly lives there.
+- One address per account, used by every property.
+
+<Callout title="Good to know">
+
+Do this **before** you print any QR codes. A code printed
+against the GoBunny address keeps pointing there — it does not switch over.
+
+</Callout>
+
+## Add your address
+
+1. Enter your subdomain in **Domain**, for example `stay.yourhotel.com`.
+2. Select **Add domain**.
+3. GoBunny prepares the DNS records while the button reads "Preparing
+   records...".
+
+You can paste a full web address. GoBunny trims `https://`, any path, and any
+trailing dot.
+
+## Add the DNS records
+
+A **DNS Records** section appears. Each row shows:
+
+| Column | Meaning |
+| --- | --- |
+| Type | `CNAME`, `A`, or `TXT`. |
+| Name | What to enter as the record name or host. |
+| Value | What to enter as the record value or target. |
+| Status | **Added**, **Waiting**, **Check again**, or **Replace**. |
+
+Every name and value has a copy button, so you can paste them exactly.
+
+1. Sign in to your DNS provider.
+2. Create each record exactly as shown.
+3. Save at your provider.
+4. Come back to GoBunny and select **Check**.
+
+If a record says **Replace**, your provider already has a conflicting record.
+GoBunny shows the replacement underneath — delete the old one and add the new.
+
+If you see "Secure connection records are being prepared. Check again in a
+moment.", the security certificate records are still being made. Wait a minute
+and select **Check** again.
+
+## Status
+
+A badge beside the address shows where you are.
+
+| Badge | Meaning |
+| --- | --- |
+| **Waiting** | Your records are not visible yet. DNS changes take anywhere from a few minutes to a few hours. |
+| **Needs attention** | Something is wrong. Read the message underneath and check your records. |
+| **Active** | The address is live. Room QR codes use it now. |
+
+The last check time is shown underneath. Select **Check** to run it again.
+
+Once the address goes **Active**, the records section disappears — there is
+nothing left to do.
+
+## What the address is used for
+
+Your address serves **guest room portals only**.
+
+- `https://stay.yourhotel.com/r/RM-1234-ABCD` — a guest room portal
+- Sign-in, sign-up, and the dashboard stay on the main GoBunny address
+
+Anything else on your address is blocked. Your team signs in at one known
+place, and your guests see yours.
+
+Room QR codes use your address whenever one is active, and the GoBunny address
+otherwise.
+
+## Remove an address
+
+Select the bin icon and confirm.
+
+<Callout title="Good to know">
+
+Printed QR codes pointing at this address stop working the
+moment you remove it. Only remove an address you have not printed, or be
+ready to reprint every card.
+
+</Callout>
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| "Use a subdomain, like stay.yourhotel.com. Main domains are not supported." | Add a prefix such as `stay.` or `rooms.`. |
+| "Enter a valid domain, like stay.yourhotel.com." | Check for typos, spaces, or an IP address. |
+| A record says **Replace** | Delete the conflicting record at your provider and add the one GoBunny shows. |
+| The status stays **Waiting** for hours | Confirm the records were saved at the provider your nameservers actually point at. |
+| "This page was updated. Refresh the page, then try again." | Reload and try again. |
+| Guests get a not-found page | The room code belongs to a different account. Check you scanned a code from this business. |
+
+DNS changes spread at their own pace, which GoBunny cannot speed up. If your
+records look right and the status is still Waiting, give it time.
+
+## Related
+
+- [Rooms](/properties/rooms) — where QR codes come from
+- [QR customization](/platform-setup/qr-customization)
+- [Guest portal overview](/guest-portal/overview)

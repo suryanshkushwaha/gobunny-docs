@@ -1,0 +1,151 @@
+---
+title: "Branding"
+description: "How your guest portal looks. What you set here applies to every property, unless a property overrides it."
+order: 1
+---
+
+How your guest portal looks. What you set here applies to every property,
+unless a property overrides it.
+
+Go to **Platform Setup → Branding**.
+
+## The layout
+
+Controls on the left, a live preview on the right, and a header at the top with
+**Unsaved changes**, **Reset**, and **Save**.
+
+The preview is a real guest portal in a phone frame. Every change shows up
+straight away, and you can tap through its tabs. On a phone it moves behind a
+**Preview** button.
+
+Nothing saves until you select **Save**. GoBunny warns you before you leave
+with unsaved work.
+
+## Theme presets
+
+Five ready-made colour schemes, each shown with swatches:
+
+**GoBunny Classic**, **Midnight Luxury**, **Forest Retreat**, **Boutique
+Terracotta**, and **Ocean Minimalist**.
+
+<Callout title="Good to know">
+
+This is the normal way to set colours. Pick the preset
+closest to your brand and move on — you do not need to touch individual
+colour values.
+
+</Callout>
+
+## Typography & Shapes
+
+| Control | Options |
+| --- | --- |
+| **Font Style** | Classic Sans (Modern), Elegant Serif (Luxury), Editorial Sans (Boutique), or Monospace / Tech. |
+| **Border Radius** | Sharp Edges, Soft Curves, Standard Radius, Ultra Round, or Pills / Circle. |
+| **Border Thickness** | No Borders, Thin Lines, or Thick Borders. |
+
+## Welcome Copy
+
+The two lines across the top of the guest portal.
+
+| Field | Notes |
+| --- | --- |
+| **Top Line** | The small line above the title. Starts as "Welcome to". Up to 80 characters. Leave it empty to hide it. |
+| **Headline Override** | The large line. Leave it empty to use the property's name. Up to 120 characters. |
+
+## Cover Image
+
+**Cover Image URL** — a link to a photo. It fills the banner behind your
+welcome wording.
+
+Use a wide landscape image. GoBunny darkens it slightly so the text stays
+readable.
+
+If the link breaks, the portal falls back to your background colour rather than
+showing a broken image.
+
+## Custom colours
+
+Switch on **Enable Custom Colors** to set every colour the portal uses, split
+into **Light Theme Variables** and **Dark Theme Variables**.
+
+Each value is a HEX code such as `#635bff`, with a colour picker beside it.
+
+There is also a dark mode switch. Turn it off and guests only get the light
+theme — the toggle disappears from their portal.
+
+Your preset still applies unless custom colours are on, so you can switch this
+off at any time and go straight back.
+
+Most businesses never need this.
+
+## Custom CSS
+
+Switch on **Enable Custom CSS** for fine control. Target the portal's element
+IDs:
+
+```css
+#portal-hero {
+  min-height: 280px;
+}
+
+#wifi-card {
+  border-radius: 20px;
+}
+```
+
+- Up to 12,000 characters.
+- `<script>` and `<style>` tags are rejected.
+- What you save is applied as `!important`, so it wins over the built-in
+  styles.
+
+<Callout title="Good to know">
+
+This can break your guest portal. Only use it if you are
+comfortable with CSS, and check the preview before saving.
+
+</Callout>
+
+## Save and reset
+
+| Button | Does |
+| --- | --- |
+| **Save** | Applies your changes to every property that has not overridden branding. |
+| **Reset** | Clears your branding back to GoBunny's defaults. |
+
+While you have unsaved changes, an amber **Unsaved changes** marker appears,
+and leaving the page — by link, back button, refresh, or closing the tab —
+warns you first.
+
+## Per-property overrides
+
+Any property can break away and use its own look. Open it and go to its
+**Branding** tab.
+
+→ [Property branding](/properties/property-branding)
+
+For any property, GoBunny works down this order:
+
+1. That property's branding, if its override is on
+2. Your business branding, from this page
+3. GoBunny's defaults
+
+Each setting falls back on its own, so a property can override just its cover
+image and keep everything else.
+
+## What branding does not cover
+
+- The preview shows the real guest portal, not a mock-up. What you see is what
+  guests get.
+- Branding is visual only. It does not change which features guests get — that
+  is [Property settings](/properties/property-settings).
+- Your logo is not set here. It lives in
+  [Settings](/administration/settings), and appears on the portal, in
+  the dashboard, and optionally in the centre of your QR codes.
+
+## Related
+
+- [Property branding](/properties/property-branding)
+- [QR customization](/platform-setup/qr-customization)
+- [Settings](/administration/settings) — logo and business name
+- [Guest portal overview](/guest-portal/overview)

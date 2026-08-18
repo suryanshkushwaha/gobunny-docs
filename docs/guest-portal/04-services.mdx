@@ -1,0 +1,100 @@
+---
+title: "Guest portal: Services"
+description: "Where guests ask your team for something — housekeeping, maintenance, laundry, the front desk."
+order: 4
+---
+
+Where guests ask your team for something — housekeeping, maintenance, laundry,
+the front desk.
+
+Needs **Guest Services** switched on in
+[Property settings](/properties/property-settings).
+
+## The list
+
+A header reads **Concierge Services** — "Select a service to send a request
+directly to hotel staff."
+
+Below it, each service you switched on is a card.
+
+| Element | Notes |
+| --- | --- |
+| Icon | Set by the category — sparkles for Housekeeping, a wrench for Maintenance, a shirt for Laundry, a bell for Front Desk, a compass for Other. |
+| Name | What you called it. |
+| Description | Your supporting line. |
+| Price | Only shown if there is one, in the property's currency. |
+| **Request** | Opens the request sheet. |
+
+Only services switched on for this property appear.
+
+→ [Services](/properties/services)
+
+## Making a request
+
+Tapping **Request** opens a sheet with:
+
+- **Request \{service name\}**
+- A line confirming the room
+- **Charge: \{amount\}**, if the service is paid
+- **Add instructions (optional)** — up to 500 characters
+- The cancellation window, if you allow it
+- **Submit Request**
+
+The confirmation names the service and the room: "Extra Towels was requested
+for 101." The request then joins their [Status](/guest-portal/status) tab.
+
+## What happens on your side
+
+The moment they submit:
+
+1. The request appears in
+   [Guest requests](/dashboard/guest-requests) with a sound and a
+   pop-up.
+2. The count beside **Guest Requests** goes up.
+3. Telegram messages go to every connected teammate whose role covers that
+   category at that property.
+
+Routing follows the category.
+
+| Category | Goes to |
+| --- | --- |
+| Housekeeping, Laundry | Housekeeping staff |
+| Maintenance | Maintenance staff |
+| Front Desk, Other | Front desk staff |
+
+Owners, admins, property managers, and services managers see everything.
+
+→ [Roles and permissions](/reference/roles-and-permissions)
+
+<Callout title="Good to know">
+
+A request always carries your current name, category, and
+price for that service — even if the guest left the page open for an hour
+before sending it.
+
+</Callout>
+
+## Cancellation
+
+If you allow it, the guest sees the window before submitting: "Within 5 mins of
+placement".
+
+They can then cancel from the [Status](/guest-portal/status) tab within that window.
+Once your team starts the work, they cannot.
+
+→ [Property settings](/properties/property-settings)
+
+## Empty and closed states
+
+| Situation | The guest sees |
+| --- | --- |
+| The services feature is off | "Closed — Concierge services are closed for the time being." |
+| Feature on, nothing switched on | "No services active — Concierge services are currently closed." |
+
+## Related
+
+- [Services](/properties/services) — choose what this property offers
+- [Master services](/master-setup/services) — write the services
+- [Property settings](/properties/property-settings)
+- [Guest requests](/dashboard/guest-requests)
+- [Guest portal: Status](/guest-portal/status)

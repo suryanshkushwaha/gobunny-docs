@@ -1,0 +1,155 @@
+---
+title: "Team"
+description: "Invite colleagues, decide what each of them can do, and limit them to specific properties."
+order: 1
+---
+
+Invite colleagues, decide what each of them can do, and limit them to specific
+properties.
+
+Go to **Administration → Team**.
+
+Owners and admins can do everything here. Property managers can invite people
+below their own level but cannot change existing access.
+
+## What is on the page
+
+| Section | Holds |
+| --- | --- |
+| **Members** | Everyone on the team, with their role and property access. |
+| **Recent Invites** | Invitations sent but not yet accepted. |
+| **Custom roles** | Any roles you have built yourself. |
+
+## Invite a teammate
+
+1. Select **Add team member**.
+2. Fill in the form.
+3. Select **Create invite**.
+4. Select **Copy** and send the link to your colleague.
+
+<Callout title="Good to know">
+
+GoBunny makes the link but does not email it. Copy it and
+send it yourself — email, WhatsApp, or on a note across the desk.
+
+</Callout>
+
+| Field | Notes |
+| --- | --- |
+| **Email** | The address they sign in with. One address belongs to one GoBunny account. |
+| **Role** | Only roles below your own are offered. |
+| **Property access** | Pick specific properties, or leave it empty for all of them. Not shown for Admin, which is always account-wide. |
+| **Custom role name** | Only when the role is **Custom**. For example "Night supervisor". |
+| **Permissions** | Only when the role is **Custom**. You can only grant what you hold yourself. |
+
+Under the form, a preview lists exactly what the selected role can do. Read it
+before you send.
+
+### The roles
+
+| Role | For |
+| --- | --- |
+| **Admin** | Running the account without ownership transfer. Always account-wide. |
+| **Property manager** | Running assigned properties end to end. |
+| **Services manager** | Guest services end to end — the master catalog, what each property offers, and the requests that come in. |
+| **Front desk** | Reception. Sees rooms, handles front-desk requests. |
+| **F&B manager** | The kitchen and food orders. |
+| **Housekeeping** | Housekeeping requests. |
+| **Maintenance** | Maintenance requests. |
+| **Read only** | Looking, not touching. |
+| **Custom** | An exact set of permissions you choose. |
+
+→ [Roles and permissions](/reference/roles-and-permissions)
+
+## What your colleague does next
+
+They open the link, enter their name and a password, and join. If GoBunny asks
+them to confirm their email, they do that first.
+
+→ [Accept a team invite](/before-you-sign-in/accept-team-invite)
+
+## Manage pending invites
+
+| Action | Does |
+| --- | --- |
+| **Copy invite link** | Copies it again, if the first message got lost. |
+| **Revoke invite** | Cancels it. The link stops working at once. |
+
+## Change someone's access
+
+1. Find them under **Members**.
+2. Select the edit icon to open **Edit team member access**.
+3. Change the role, the custom role name, the permissions, or the property
+   access.
+4. Save.
+
+Changes take effect on their next page load. You cannot promote anyone to or
+above your own level.
+
+## Remove someone
+
+Find them under **Members**, select the remove icon, and confirm.
+
+This deletes their sign-in for this account and everything tied to it: their
+profile, their membership, their property access, and their Telegram
+connection.
+
+Any requests assigned to them are unassigned first and stay in the queue, so no
+work is lost. Their past requests and audit entries stay.
+
+You cannot remove yourself, or anyone at or above your own level.
+
+## Custom roles
+
+Choose **Custom**, name it, and tick the exact permissions.
+
+Permissions are grouped: Account, Dashboard, Team, Properties, Rooms, Branding
+and domains, Menu, Services, Local guide, Guest requests, and Integrations.
+
+Two rules:
+
+- You can only grant permissions **you** hold.
+- Team management cannot be granted through a custom role.
+
+The name you choose appears wherever that teammate's role is shown.
+
+Use a custom role when a preset is close but not right — a night manager who
+handles every request but must not change your setup, for instance.
+
+## Property access
+
+Most roles can be limited to specific properties. Someone limited to two
+properties sees only those two: in the properties list, in the request queue,
+in Telegram, in the property switcher, and in audit logs.
+
+Leave the field empty for access to every property, including ones you add
+later.
+
+**Admin** is always account-wide.
+
+## What else to know
+
+- Invite links expire after seven days. Send a new one if a colleague is slow
+  to join.
+- Everyone needs an active membership. If one is deactivated, they can still
+  sign in but your business will not load for them.
+- Team and role changes are recorded in [Audit logs](/administration/audit-logs).
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| A field is highlighted on the invite form | Read the message under it. |
+| "Choose at least one property." | You chose limited access but picked nothing. Pick some, or clear the field for all. |
+| "Name this custom role." | Custom roles need a name of at least 2 characters. |
+| "Choose at least one permission." | Custom roles need at least one permission ticked. |
+| "Invites unavailable" | Your role can see this page but not invite. Ask an owner or admin. |
+| The email is already in use | That address already has a GoBunny account. Use another. |
+| A role you want is not in the list | It is at or above your own level. Ask an owner or admin to send that invite. |
+
+## Related
+
+- [Roles and permissions](/reference/roles-and-permissions)
+- [Accept a team invite](/before-you-sign-in/accept-team-invite)
+- [Audit logs](/administration/audit-logs)
+- [Integrations](/platform-setup/integrations)

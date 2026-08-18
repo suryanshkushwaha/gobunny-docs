@@ -1,0 +1,165 @@
+---
+title: "Master menus"
+description: "Build your dishes and drinks once, arrange them into menus, then give those menus to your properties."
+order: 2
+---
+
+Build your dishes and drinks once, arrange them into menus, then give those
+menus to your properties.
+
+Go to **Master Setup → Menus**.
+
+## Quick start
+
+1. Open **Master Catalog Items** and add your dishes and drinks.
+2. Open **Menu Templates** and create a menu, such as `Breakfast` or `Dinner`.
+3. Open the template and group your items into categories.
+4. Give the menu to a property from that property's **Menu** tab.
+
+## The two tabs
+
+| Tab | Holds |
+| --- | --- |
+| **Master Catalog Items** | Every dish and drink, with its price, photo, and dietary details. |
+| **Menu Templates** | Menus built from those items, each with its own serving hours and days. |
+
+Add items first. A template needs items to arrange.
+
+## Add a catalog item
+
+1. Open **Master Catalog Items**.
+2. Select **Add Item**.
+3. Fill in the fields below.
+4. Save.
+
+| Field | Notes |
+| --- | --- |
+| **Item name** | What guests see. |
+| **Description (optional)** | One line about the dish. |
+| **Default currency** | The starting currency. Each property charges in its own. |
+| **Price** | The starting price. Each property can charge differently. |
+| **Image URL (optional)** | A web address for a photo. |
+| **Spiciness level** | Not spicy, Mild, Medium, or Hot. |
+| **Allergens (optional, comma-separated)** | For example `Nuts, Gluten, Dairy`. |
+| **Vegetarian** / **Vegan** | Tick what applies. Vegan requires vegetarian. |
+
+Allergens and dietary marks appear as badges on the guest's screen. Fill them
+in — guests rely on them.
+
+<Callout title="Good to know">
+
+An item can appear in as many menus as you like. Add
+"Orange Juice" once and use it in Breakfast, Room Service, and Poolside.
+
+</Callout>
+
+## Create a menu template
+
+1. Open **Menu Templates**.
+2. Select **Create Template**.
+3. Fill in the fields below.
+4. Select **Add template**.
+
+| Field | Notes |
+| --- | --- |
+| **Menu name** | For example `Breakfast Menu`. |
+| **Description (Optional)** | A line describing when this menu applies. |
+| **Start Time (Optional)** | When it opens. |
+| **End Time (Optional)** | When it closes. |
+| **Available days** | Which days of the week it runs. |
+
+Leave the times blank for a menu that is always available.
+
+<Callout title="Good to know">
+
+Editing a template's name, description, times, or days
+pushes those values out to every property serving it as a **linked** menu,
+replacing any hours they had set locally. Change the template's schedule only
+when you mean it to apply everywhere.
+
+</Callout>
+
+## Build the menu
+
+Select a template to open it. This is where you group your items.
+
+1. Select **Add Category** — for example `Starters`, `Mains`, `Drinks`.
+2. Give the category a name and an optional description.
+3. Inside the category, select **Link Catalog Items**.
+4. Tick the items that belong there.
+5. Drag categories and items to set the order guests see.
+
+Use **Back to Menu Templates** to return to the list.
+
+<Callout title="Good to know">
+
+Linking an item does not copy it. Correct a price or a typo
+in the catalog and every menu using that item updates.
+
+</Callout>
+
+## Card view and list view
+
+The template list has two layouts. Use the buttons at the top right to switch.
+
+Card view shows each menu as a tile. List view shows a table with serving
+hours, active days, and how many properties use each menu — better once you
+have several.
+
+## Give a menu to a property
+
+Menus live here but are served from a property. Open the property, go to its
+**Menu** tab, select **Add a menu**, and choose one of three routes:
+
+| Route | What it does | Choose it when |
+| --- | --- | --- |
+| **Link existing menu** | The property serves this menu directly. Add a category here and it appears there. The property still sets its own prices, stock, and which items to hide. | Every property serves the same food. |
+| **Start from a template** | The property gets its own copy of the **structure** — its categories and its lineup — which it can then change freely. | This property serves a different selection. |
+| **Start from scratch** | An empty menu whose structure is built at the property. | This property's lineup has nothing in common with the others. |
+
+All three routes still draw their dishes from the master catalog. What changes
+is who controls the **structure** — which categories exist and which items sit
+in them.
+
+→ [Property menu](/properties/menu)
+
+## Edit an item or a menu
+
+Select the pencil icon.
+
+Editing a catalog item changes it at **every** property that serves it, however
+that property got its menu. There is no per-property copy of a dish.
+
+What a property does control is the price it charges, whether the item is
+available, and — on a linked menu — whether it is shown at all.
+
+| Set here, once | Set per property |
+| --- | --- |
+| Name, description, photo, allergens, dietary marks, spiciness | Price |
+| The catalog price, used until a property overrides it | Available or sold out |
+| Which items sit in which category of a template | Visible or hidden, on linked menus |
+
+## Delete an item or a menu
+
+Select the bin icon, then confirm.
+
+Deleting a catalog item removes it from every menu that links to it. Deleting a
+template does not remove copies that properties already made.
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| A template has no items to link | Add catalog items first, on the **Master Catalog Items** tab. |
+| A menu is not showing to guests | Check the property's **Settings** tab has **F&B Menu** switched on, and that the menu is inside its serving hours and days. |
+| An item shows the wrong price at one property | Prices are set per property. Open that property's **Menu** tab and edit it there. |
+| A price change did not reach a property | That property has set its own price for the item. Clear the **Property price** field there to go back to the catalog price. |
+| A template shows **Unassigned** | No property uses it yet. Add it from a property's **Menu** tab. |
+
+## Related
+
+- [Property menu](/properties/menu) — serving hours, prices, stock
+- [Property settings](/properties/property-settings) — switch the menu
+  on
+- [Guest portal: Dining](/guest-portal/dining) — what guests see
+- [Master services](/master-setup/services)

@@ -1,0 +1,137 @@
+---
+title: "Properties"
+description: "A property is one place you operate — a hotel, homestay, hostel, resort, villa, apartment, or guesthouse."
+order: 1
+---
+
+A property is one place you operate — a hotel, homestay, hostel, resort, villa,
+apartment, or guesthouse.
+
+Everything else hangs off a property: rooms, menus, services, recommendations,
+and how the portal looks.
+
+Go to **Operations → Properties**.
+
+## The list
+
+Each property is a card showing:
+
+| Element | Meaning |
+| --- | --- |
+| Name | Select it to open the property. |
+| Rooms | How many rooms have QR codes. |
+| Requests | Open guest requests. The bell beside the number highlights whenever there is work waiting. |
+| **Menu**, **Services**, **Guide** | Green means guests can see it, red means they cannot. |
+| **⋯** | **Edit details** and **Delete**. |
+
+Two icons in the page header switch between cards and a compact list. Your
+choice is remembered on that device.
+
+## Add a property
+
+1. Select **Add Property**.
+2. Fill in the fields below.
+3. Select **Create Property**.
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| **Property Name** | Yes | Up to 120 characters. Guests see this. |
+| **Property Type** | Yes | Hotel, Homestay, Hostel, Resort, Villa, Apartment, or Guesthouse. |
+| **Currency** | Yes | INR, USD, EUR, or SGD. Every price at this property uses it. |
+| **Contact Email** | Yes | Where your operational mail goes. |
+| **Contact Phone** | Yes | Guests get this as **Call Desk** on their portal. Use a number someone answers. |
+| **Default Wi-Fi SSID** | Yes | The network name guests see. |
+| **Default Wi-Fi Password** | Yes | Guests copy this with one tap. |
+| **Checkout Time** | Yes | Shown to guests. Individual rooms can differ. |
+| **Local Time Zone** | Yes | Drives menu hours, preorder times, and cancellation windows. |
+| **Address (Optional)** | No | Up to 500 characters. |
+
+<Callout title="Good to know">
+
+Get the time zone right before you open the property to
+guests. Every schedule in GoBunny reads from it — a breakfast menu set to
+7am opens at 7am *there*, not where you are.
+
+</Callout>
+
+The card appears straight away while it finishes saving. Its controls stay
+disabled for that moment.
+
+## Edit a property
+
+Select **⋯** → **Edit details**, change what you need, and save.
+
+You can also edit from inside the property, on its
+[Settings](/properties/property-settings) tab.
+
+## Delete a property
+
+Select **⋯** → **Delete**, read the confirmation, then select **Delete
+property**.
+
+This removes the property and everything attached to it: rooms, room codes,
+menus, services, guides, and setup. Printed QR codes for those rooms stop
+working. It cannot be undone.
+
+<Callout title="Good to know">
+
+It also removes that property's guest request history and
+its audit log entries. If you need those for your accounts, record them
+first.
+
+</Callout>
+
+## What a new property starts with
+
+| Feature | State |
+| --- | --- |
+| **Guest Services** | On |
+| **F&B Menu** | Off |
+| **Local Guide** | Off |
+
+Every service in your master catalog appears on the property's Services tab,
+switched off. Turn on the ones this property offers and set their prices.
+
+Switch the menu and guide on in [Property settings](/properties/property-settings)
+when you are ready for guests to see them.
+
+→ [Master services](/master-setup/services)
+
+## Inside a property
+
+Select a card to open it. The sidebar becomes that property's tabs.
+
+| Tab | Guide |
+| --- | --- |
+| Rooms | [Rooms](/properties/rooms) |
+| Menu | [Menu](/properties/menu) |
+| Services | [Services](/properties/services) |
+| Local Guide | [Local Guide](/properties/local-guide) |
+| QR Customization | [Property QR customization](/properties/property-qr-customization) |
+| Branding | [Property branding](/properties/property-branding) |
+| Settings | [Property settings](/properties/property-settings) |
+
+**← All properties** takes you back.
+
+## How properties relate to each other
+
+- Currency and time zone are set per property, so a group operating in several
+  countries works correctly.
+- If your access is limited to specific properties, only those appear here.
+- Every create, edit, and delete is recorded in
+  [Audit logs](/administration/audit-logs).
+
+## Troubleshooting
+
+| Problem | Fix |
+| --- | --- |
+| A field is highlighted in red | Read the message under it. The email must be valid, the phone at least 3 characters, and the checkout time a real time. |
+| "We could not load your properties." | Reload the page. |
+| A property opens to a not-found message | It was deleted, or your access to it was removed. |
+| Menu or Guide shows red on the card | Those features are switched off. Turn them on in [Property settings](/properties/property-settings). |
+
+## Related
+
+- [Rooms](/properties/rooms) — do this next
+- [Property settings](/properties/property-settings)
+- [Getting started](/getting-started)

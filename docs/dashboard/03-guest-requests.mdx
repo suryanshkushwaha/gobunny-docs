@@ -1,0 +1,192 @@
+---
+title: "Guest requests"
+description: "Your live queue. Every service request and food order a guest sends from their room arrives here."
+order: 3
+---
+
+Your live queue. Every service request and food order a guest sends from their
+room arrives here.
+
+Go to **Operations → Guest Requests**.
+
+## Before requests can arrive
+
+The page shows a setup card if something is missing:
+
+- No properties → add one in [Properties](/properties/properties)
+- No rooms → add rooms in the property's [Rooms](/properties/rooms) tab
+
+Guests cannot send anything until a room has a QR code.
+
+## Live alerts
+
+You do not have to keep this page open. Anywhere in the dashboard, a new
+request you have access to will:
+
+1. Raise the red count beside **Guest Requests**
+2. Play a short sound
+3. Show a pop-up card with the property, room, and a summary
+
+Select the pop-up to come here.
+
+## The four sections
+
+Buttons across the top switch what you are looking at. Each shows a count.
+
+| Section | Shows |
+| --- | --- |
+| **Active** | Everything pending or in progress. Your working list. |
+| **Completed** | Work marked done. |
+| **Cancelled** | Requests cancelled by staff or by the guest. |
+| **Recent** | Everything loaded, whatever its status. |
+
+Inside **Active**, a second row narrows it further: **All**, **Pending**, **In
+progress**.
+
+## Find a request
+
+Type in the search box to match request text or room numbers.
+
+For more, select **Filters** — a drawer on a phone, a dialog on a computer.
+Choose what you want, then **Apply**.
+
+| Filter | Notes |
+| --- | --- |
+| **Properties** | One or more. Leave empty for all. |
+| **Rooms** | One or more. The list narrows to the properties you picked. |
+| **Request Type** | Services, Orders, or both. |
+| **Assigned Staff** | Teammates, or **Unassigned**. |
+| **Sort Order** | Oldest first, Newest first, Room number, or Property name. |
+
+Applied filters show as chips. Select the **×** on one to drop it, or **Clear
+all** to reset.
+
+<Callout title="Good to know">
+
+Your section, search, filters, and sort all live in the
+page address. Bookmark a view you use every day — pending housekeeping at one
+property, say — and it opens ready to work.
+
+</Callout>
+
+## Read a request
+
+Each card leads with the task, not the guest.
+
+| Element | Meaning |
+| --- | --- |
+| Icon | A fork for a food order, a bell for a service request. |
+| Title | The service name, or a summary of the order. Paid services show the price. |
+| Status | Pending, In Progress, Completed, or Cancelled. |
+| Room and property | Where it came from. |
+| Waiting time | How long it has been open. Hover it for the exact time it arrived. |
+| Assigned staff | Who is handling it. |
+
+Select the card to expand it. You get the full order with its total, the
+delivery time, the guest's note, and who last updated the request.
+
+## Work a request
+
+Which buttons you get depends on your role.
+
+### If you assign work
+
+Owners, admins, property managers, and services managers.
+
+| Control | Does |
+| --- | --- |
+| Staff dropdown | Sends the request to a teammate. Only people who can update requests and can reach that property are listed. This does not change the status. |
+| **Start** | Moves a pending request to in progress. The button then reads "In Progress", so the card does not jump. |
+| **Complete** | Marks it done. |
+| **⋯** → **Move to pending** | Sends it back to pending. On a service request this also clears whoever was on it. |
+| **⋯** → **Cancel request** | Cancels it. Kept in the menu so it is hard to hit by mistake. |
+
+### If you claim your own work
+
+Front desk, housekeeping, maintenance, and F&B managers.
+
+| Control | Does |
+| --- | --- |
+| **Claim** | Takes an unassigned pending service request for yourself and starts it, in one step. If two people press it together, one wins. |
+| **Mark in progress** | Starts work a manager assigned to you. |
+| **Mark complete** | Finishes work assigned to you. |
+| **Unclaim** | Returns it to the pool as pending. |
+
+You see these only on requests assigned to you, or unassigned ones you may
+claim.
+
+<Callout title="Good to know">
+
+**Claim** moves the request to In Progress on its own, so
+there is nothing to press afterwards. **Mark in progress** is for work a
+manager routed to you, which stays pending until you start it.
+
+</Callout>
+
+### Undo a cancellation
+
+A cancelled card stays in the queue with a line through it and an **Undo**
+button for eight seconds. After that it moves to **Cancelled**.
+
+### Reopen closed work
+
+Completed and cancelled requests can be reopened by anyone who can update
+request status — every role except read only. Use the **⋯** menu on a closed
+card to move it back to pending or in progress, complete it, or cancel it.
+
+There is no way to delete a request — closing one only changes its status, so
+your history stays whole. Deleting the room or the property it belongs to does
+remove it.
+
+## Load older requests
+
+The queue loads a set number of requests to stay fast. Select **Load More** at
+the bottom for more history.
+
+## Who sees what
+
+Requests are routed by role, so each team gets only its own work.
+
+| Role | Sees |
+| --- | --- |
+| Owner, Admin, Property manager | Everything |
+| Services manager | All service requests |
+| F&B manager | Food and drink orders |
+| Housekeeping | Housekeeping and Laundry |
+| Maintenance | Maintenance |
+| Front desk | Front Desk, Other, and anything uncategorised |
+| Read only | Everything, with no buttons |
+
+Property access narrows this further.
+
+→ [Roles and permissions](/reference/roles-and-permissions)
+
+## In Telegram
+
+Connect Telegram and the same requests arrive as private messages, with buttons
+to claim, start, complete, or cancel. Acting in Telegram updates the dashboard,
+and acting in the dashboard updates the Telegram message.
+
+→ [Integrations](/platform-setup/integrations)
+
+## What happens elsewhere
+
+- Guests see status changes on their phone within about 20 seconds, with a
+  notification. Marking something in progress is worth doing — it tells the
+  guest someone is on it.
+- Guests can cancel their own requests if you allow it in
+  [Property settings](/properties/property-settings), within the window
+  you set.
+- If a teammate leaves the team, their requests become unassigned and stay in
+  the queue.
+- Every status change, claim, assignment, and cancellation is recorded in
+  [Audit logs](/administration/audit-logs), including whether it came
+  from the dashboard, Telegram, or the guest.
+
+## Related
+
+- [Property settings](/properties/property-settings) — guest
+  cancellation
+- [Integrations](/platform-setup/integrations) — Telegram
+- [Audit logs](/administration/audit-logs)
+- [Guest portal: Status](/guest-portal/status) — what the guest sees
