@@ -1,7 +1,12 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { SidebarInset } from '@/components/ui/sidebar';
+
+export const metadata: Metadata = {
+  title: 'Page not found',
+};
 
 export default function NotFound() {
   return (
@@ -17,7 +22,7 @@ export default function NotFound() {
           That page is not part of the guide. It may have moved, or the link may
           be mistyped.
         </p>
-        <Button render={<Link href='/' />} className='mt-2'>
+        <Button nativeButton={false} render={<Link href='/' />} className='mt-2'>
           Back to the guide
         </Button>
       </div>

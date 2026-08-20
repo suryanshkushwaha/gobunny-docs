@@ -26,11 +26,15 @@ export function DocsHero({
       </p>
 
       <div className='mt-6 flex flex-wrap items-center gap-2'>
-        <Button render={<Link href='/getting-started' />}>
+        <Button nativeButton={false} render={<Link href='/getting-started' />}>
           Get started
           <ArrowRight data-icon='inline-end' />
         </Button>
-        <Button variant='outline' render={<Link href='/dashboard/navigation' />}>
+        <Button
+          variant='outline'
+          nativeButton={false}
+          render={<Link href='/dashboard/navigation' />}
+        >
           <Compass data-icon='inline-start' />
           Find your way around
         </Button>

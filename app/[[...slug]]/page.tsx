@@ -42,7 +42,8 @@ export async function generateMetadata({
   const page = getPage(route);
   if (page) {
     return {
-      title: route === '/' ? 'GoBunny Docs' : page.title,
+      title:
+        route === '/' ? { absolute: 'GoBunny Docs' } : page.title,
       description: page.description,
     };
   }
