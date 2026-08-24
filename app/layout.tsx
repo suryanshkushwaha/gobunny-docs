@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist_Mono, Inter } from 'next/font/google';
 
 import './globals.css';
 import { DocsSidebar } from '@/components/docs/docs-sidebar';
@@ -10,9 +10,9 @@ import { getSectionPages, getSections, getTopLevelPages } from '@/lib/docs/conte
 import type { DocPage } from '@/lib/docs/types';
 import { cn } from '@/lib/utils';
 
-// Geist Sans for text, Geist Mono for code. The variable names and the 16px
-// root size are unchanged, so every token and size still lines up.
-const fontSans = Geist({ subsets: ['latin'], variable: '--font-sans' });
+// Inter for text, Geist Mono for code. The root font-size is left alone, so
+// 1rem is 16px.
+const fontSans = Inter({ subsets: ['latin'], variable: '--font-sans' });
 const fontMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' });
 
 export const metadata: Metadata = {
