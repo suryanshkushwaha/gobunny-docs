@@ -110,6 +110,21 @@ Select an item to open **Property item settings**.
 | **Property price** | What this property charges. Leave blank to use the catalog price. |
 | **Available** | Whether guests can order it here. |
 | **Visible to guests** | On linked menus only. Hides the item at this property without changing the master menu. |
+| **Custom tags for this property** | Off by default, so the item shows the highlight tags it has in the master catalog. Switch it on to choose your own. |
+
+### Highlight tags
+
+Left alone, an item carries the highlight tags set in the master catalog, and
+the control tells you which — "Using catalog tags: Must Try, Chef's Special."
+
+Switch **Custom tags for this property** on to depart from that. Pick up to
+three under **Tags shown at this property**, or clear every one to show no tags
+here at all. Switch it back off and the item follows the catalog again.
+
+This works on linked menus too. The structure of a linked menu comes from the
+master, but its tags are still yours.
+
+→ [Master menus](/master-setup/menus)
 
 ### Sold out
 
@@ -131,8 +146,10 @@ its own.
   guest cannot order a sold-out item or an out-of-hours menu from a stale page.
 - A guest's basket belongs to one menu and one delivery time. To order from a
   second menu, they finish or empty the first.
-- Menu and item changes are recorded in
-  [Audit logs](/administration/audit-logs).
+- Menu, category, and item changes are recorded in
+  [Audit logs](/administration/audit-logs) — including items linked into or
+  removed from a category, and this property's price, stock, and highlight tag
+  overrides.
 
 ## Troubleshooting
 
@@ -145,6 +162,7 @@ its own.
 | You cannot add a category | The menu is linked to a master menu. Change it there, or start from a template instead. |
 | An item came back in stock on its own | It had a scheduled return. Turn it off again and choose to bring it back manually. |
 | A master price change did not reach this property | This property has set its own **Property price** for that item. Clear the field to go back to the catalog price. |
+| An item's highlight tags differ from the catalog | **Custom tags for this property** is on for that item. Switch it off to follow the catalog. |
 
 ## Related
 

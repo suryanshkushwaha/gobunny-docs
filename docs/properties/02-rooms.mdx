@@ -18,8 +18,11 @@ A table on a computer, cards on a phone.
 | **Room** | The number or name you entered. |
 | **Room Code** | The unique code GoBunny made, like `RM-XXXX-XXXX`. The QR code points at it. |
 | **QR Code** | **View** and **Download PNG**. |
-| **Wi-Fi Settings** | The network this room hands out, tagged **Override** or **Default**. |
-| **Actions** | **⋯**: View QR Code, Download PNG, Edit room, Delete. |
+| **Wi-Fi Settings** | The network this room hands out, tagged **Custom** or **Property**. |
+| **Actions** | **⋯**: View QR Code, Download PNG, Edit room, Pause or Resume, Delete. |
+
+A paused room carries a **Paused** badge, or **Paused by plan** if GoBunny
+paused it for you.
 
 ## Add a room
 
@@ -30,11 +33,27 @@ A table on a computer, cards on a phone.
 | Field | Required | Notes |
 | --- | --- | --- |
 | **Room Number / Name** | Yes | Up to 50 characters. Anything works — `101`, `Deluxe Suite`, `Cottage 3`. |
-| **Wi-Fi SSID (Override)** | No | Leave empty to use the property network. The placeholder shows what it will use. |
-| **Wi-Fi Password (Override)** | No | Leave empty to use the property password. |
-| **Checkout Time (Override)** | No | Leave as **No override** to use the property checkout time. |
+| **Different Wi-Fi or checkout?** | No | A collapsed section. Open it only if this room differs from the property. |
 
 The room code is generated for you and cannot be changed.
+
+### Different Wi-Fi or checkout?
+
+Most rooms use the property's Wi-Fi and checkout time, so those three fields
+stay folded away under a single question. The line under it tells you where the
+room stands — "Optional · uses property by default", or "This room uses custom
+settings" once you have set something.
+
+Open it and you get three plain fields.
+
+| Field | Notes |
+| --- | --- |
+| **Wi-Fi network** | Leave empty to use the property network. The placeholder shows what it will use. |
+| **Wi-Fi password** | Leave empty to use the property password. |
+| **Checkout time** | Leave empty to use the property checkout time. The placeholder shows it. |
+
+A **Clear** button appears beside the question once the room has custom
+settings. It puts all three back to the property's.
 
 The row appears at once with a "Finishing up..." note. QR actions arrive a
 moment later, once the code exists.
@@ -45,6 +64,23 @@ Add every room that needs its own QR code before you print
 anything. A room added later needs its own card printed separately.
 
 </Callout>
+
+## Pause a room
+
+Select **⋯** → **Pause** to take one room out of service. Scanning its card
+stops opening the portal, and the room keeps everything else — its code, its
+history, its settings.
+
+Select **⋯** → **Resume** to bring it back. The printed card works again; there
+is nothing to reprint.
+
+Use this for a room under repair. Use **Delete** only when the room is gone for
+good, because deleting takes its request history with it.
+
+A room can also read **Paused by plan**, which means GoBunny paused it because
+your plan's room limit is full rather than because anyone chose to.
+
+→ [Property settings](/properties/property-settings#pause-the-property)
 
 ## Edit a room
 
@@ -114,12 +150,13 @@ settings. Change them for the whole business, or just for this property.
 
 ## How Wi-Fi is decided
 
-GoBunny uses the room's override if it has one, and the property default
+GoBunny uses the room's own network if it has one, and the property default
 otherwise. The same answer appears in the guest portal, the QR dialog, and the
 printed card.
 
-Use an override when a room or wing runs on a different network — a villa with
-its own router, say.
+Give a room its own when it or its wing runs on a different network — a villa
+with its own router, say. The rooms list tags each one **Custom** or
+**Property**, so you can see at a glance which is which.
 
 Wi-Fi passwords are masked in the dashboard but shown to the guest. That is the
 point of the portal.
@@ -132,7 +169,7 @@ point of the portal.
 | "QR code is still loading. Please try again." | Wait a second for it to draw, then print. |
 | A guest reports **Room Not Found** | The room was deleted, or the printed code points at a web address you no longer use. |
 | A room shows "Not available yet" under QR Code | It is still being created. Wait a moment. |
-| A guest has the wrong Wi-Fi password | Check the room's override, then the property default. Reprint the tent card. |
+| A guest has the wrong Wi-Fi password | Check the room's own setting under **Different Wi-Fi or checkout?**, then the property default. Reprint the tent card. |
 
 ## Related
 

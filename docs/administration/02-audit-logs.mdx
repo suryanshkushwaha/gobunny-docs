@@ -17,7 +17,7 @@ compliance question.
 | --- | --- |
 | **Properties** | Created, updated, deleted. |
 | **Rooms** | Created, updated, deleted. |
-| **Menus & Items** | Menus, categories, and items created, updated, or deleted. |
+| **Menus & Items** | Menus, categories, and items created, updated, or deleted — in the master catalog and on a property's own menus. Includes items linked into or removed from a category, and a property's price, stock, and highlight tag overrides. |
 | **Services** | Created, updated, enabled, disabled, deleted. |
 | **Teammates & Roles** | Invites created and revoked, members added, access changed, members removed. |
 | **Guest Requests** | Claimed, unclaimed, assigned, started, completed, cancelled — including cancellations by the guest. |
@@ -56,11 +56,16 @@ Entries load 50 at a time. Use the controls at the bottom to page through.
 | Who changed the Wi-Fi password? | Category → Rooms or Properties, Action → Updated. |
 | When did that teammate get access? | Category → Teammates & Roles. |
 | Who took that request off the queue? | Category → Guest Requests, Action → Assignments. |
+| Who took that dish out of the Dinner menu? | Category → Menus & Items, Action → Updated. Set Property to **Account Wide** for a master menu, or to the property for its own. |
+| Who marked that item sold out? | Category → Menus & Items, Property → the property. The entry carries the price, stock, and tag values that were saved. |
 
 ## Good to know
 
 - Wi-Fi passwords are hidden before anything is written here. They never appear
   in the log.
+- Master Setup changes belong to no single property, so they file under
+  **Account Wide**. Filter to that when a change to the catalog or a template is
+  not where you expect it.
 - Logs respect property access. If you are limited to certain properties, you
   see their entries plus account-wide ones.
 - Logs cannot be edited or deleted from the dashboard, and entries keep the

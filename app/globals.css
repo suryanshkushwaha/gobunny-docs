@@ -257,9 +257,12 @@ code[data-theme] span {
   }
 
   /* Long single-word strings in tables (room codes, URLs) must not force the
-     page sideways on a phone. */
+     page sideways on a phone. break-word rather than anywhere: anywhere also
+     drops each cell's min-content width to one character, which lets a wide
+     table crush its label column into a vertical stack of letters instead of
+     overflowing into the wrapper's horizontal scroll. */
   :where(td, th) {
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
   }
 
   /* list-none hides the disclosure triangle in Chrome and Firefox; Safari
