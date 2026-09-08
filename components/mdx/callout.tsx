@@ -28,9 +28,8 @@ const variants = {
 export type CalloutVariant = keyof typeof variants;
 
 /**
- * Replaces the Docusaurus `:::note[Good to know]` admonition. All 49 blocks in
- * the guide are the default `note`; the other variants are here so future notes
- * have somewhere to go.
+ * The callout used throughout the guide. All 49 blocks are the default `note`;
+ * the other variants are here so future notes have somewhere to go.
  *
  * A 2px accent rule down the leading edge does the work of separating it from
  * body copy, so the fill can stay very light and the block never shouts — there

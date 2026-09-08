@@ -1,7 +1,6 @@
 /**
  * Fails the build on a broken internal link, a dangling anchor, or MDX syntax
- * that would only blow up later. Docusaurus did this with
- * `onBrokenLinks: 'throw'`; this is the replacement.
+ * that would only blow up later.
  *
  * Runs in `prebuild`, so a bad link can never ship.
  */
@@ -49,7 +48,7 @@ for (const [route, { file, data, content }] of parsed) {
   for (const { line, inFence } of annotateFences(content)) {
     if (inFence) continue;
 
-    // --- leftover Docusaurus syntax ---------------------------------------
+    // --- leftover admonition syntax ---------------------------------------
     if (/^:::/.test(line.trim())) {
       problems.push(`${file}: leftover admonition "${line.trim()}"`);
     }

@@ -20,8 +20,8 @@ export function walkDocs(dir = DOCS_DIR, exts = ['.md', '.mdx']) {
  * docs/properties/02-rooms.md -> /properties/rooms
  * docs/index.md               -> /
  *
- * The NN- prefixes order the sidebar and are stripped from the URL, which is
- * what Docusaurus did. Keeping that rule keeps every published URL working.
+ * The NN- prefixes order the sidebar and are stripped from the URL. Keeping
+ * that rule keeps every published URL working.
  */
 export function fileToRoute(file) {
   const rel = file

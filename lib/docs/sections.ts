@@ -1,6 +1,4 @@
-// Generated from the Docusaurus _category_.json files by
-// scripts/migrate-content.mjs. Hand-edit freely from here on — this is the
-// source of truth for section labels, ordering and landing-page copy.
+// The source of truth for section labels, ordering and landing-page copy.
 
 export type DocSection = {
   slug: string;

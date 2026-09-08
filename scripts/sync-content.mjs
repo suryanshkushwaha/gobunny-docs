@@ -26,7 +26,7 @@ import {
 
 const files = walkDocs(DOCS_DIR, ['.mdx']);
 if (!files.length) {
-  console.error('No .mdx files in docs/. Run scripts/migrate-content.mjs first.');
+  console.error('No .mdx files found in docs/.');
   process.exit(1);
 }
 
